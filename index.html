@@ -6,6 +6,12 @@
     </title>
 
     <style type="text/css">
+
+    .menu{
+      position: fixed;
+      margin: 10px;
+    }
+
     .plano{
       font-size:200%;
       text-align: left;
@@ -13,29 +19,74 @@
 
     #first-section{
       color:blue;
-      background-color:green;
+      background-color:#ADF2B6;
     }
 
     #Filosofía{
       font-style: italic;
       text-align: justify;
-      background-color: grey;
+      background-color: #F6ECEC;
+      float: right;
+      padding: 5px 40px;
     }
-    </style>
 
-    <p><a href="servicios.html">SERVICIOS</a></p>
+    #FilosofíaStart{
+      font-style: italic;
+      text-align: justify;
+      background-color: #F6ECEC;
+      position: relative;
+      align-items: center;
+    }
+
+    #Sobre{
+      font-style: italic;
+      text-align: justify;
+      background-color: #F6ECEC;
+      position: relative;
+      align-items: center;
+      margin: 50px 20px;
+    }
+
+    #TerapiasDestacadas{
+      font-style: italic;
+      text-align: justify;
+      background-color: #F6ECEC;
+      position: relative;
+      align-items: center;
+    }
+
+    #Contacto{
+      font-style: italic;
+      text-align: justify;
+      background-color: #F6ECEC;
+      position: relative;
+      align-items: center;
+    }
+
+    .clear-float{
+      clear:both;
+    }
+
+    </style>
+<div class="menu">
+      <p><a href="servicios.html">SERVICIOS</a></p>
+</div>
+
   </head>
   <body>
     <div id="first-section">
     <h1 id="top">Bienvenido a Barnasha</h1>
         <h3>Hazlo simple</h3>
-
-        <img src="LOGO.jpg" width="600" height="600">
     </div>
 
         <hr>
+
+<div id="FilosofíaStart">
+  <h2 class="plano">Filosofía de trabajo</h2>
+  <p><img src="LOGO.jpg" width="100" height="100"></p>
+</div>
+
 <div id="Filosofía">
-    <h2 class="plano">Filosofía de trabajo</h2>
         <p>Un pensamiento es el <b><u><em>origen</em></u></b> todo lo que logramos. Ayudar a otros es lo que da sentido a la vida... por esa razón hace 9 años inicié esta travesía sin retorno; la terapia física fue la puerta que abrió mi mente y capacidades hacia “el movimiento”. Experimentar este concepto en su extensión, me puso en el camino de comprender que finalmente somos energía y fluimos como el universo, en transformación y expansión.
           Hoy trabajo como terapeuta alternativa y Coach de Vida, la experiencia  de disponer de ambas disciplinas es el principio de integralidad y oportunidad que deseo transmitir: cualquier momento es propicio para tomar acción, “moverse” y hacer cambios en la vida que lleven a disfrutar de metas, sueños y propósitos.
           La OMS define la salud como un estado "completo" de bienestar, es decir una situación temporal que claramente se manifiesta en respuesta a las circunstancias por las que atraviesa el individuo; hacer énfasis e interpretación de la palabra “completo” como algo entero, que no se puede dividir, significa que la persona donde quiera que esté, es cuerpo, emoción, mente y espíritu. La integralidad humana, viaja entre el mundo de lo intangible, del espíritu, del pensamiento a las emociones, a lo que se puede oír, oler, tocar, sentir, ver, medir...
@@ -46,6 +97,8 @@
 </div>
         <hr>
 
+<div id ="Sobre">
+
     <h2>Sobre Barnasha</h2>
             <p> Con 5 años de experiencia en ejercicio permanente y actualizado de prácticas terapéuticas alopáticas con medios físicos:  Ultrasonido, terapia pasiva, termoterapias; biofeedback y ejercicio terapéutico, masaje terapéutico y relajante,  teniendo como objetivo la recuperación, atención y cuidado total del paciente.
               A este sólido sistema Barnasha ha incorporando una amplia gama de técnicas y terapias de la medicina oriental (llamadas también complementarias o alternativas) que han demostrado por milenios su eficacia en el contexto curativo y de rehabilitación. Dando un valor agregado a los tratamientos y llevando un beneficio integral al ser humano (cuerpo, mente, emociones y espíritu).
@@ -55,6 +108,10 @@
 
             <hr>
 
+          </div>
+
+          
+<div id="TerapiasDestacadas">
     <h2>Terapias destacadas</h2>
     <ul>
       <li>Moxibustión</li>
@@ -64,7 +121,9 @@
 
     </ul>
     <hr>
+</div>
 
+<div id=Contacto>
   <h2>Contactanos</h2>
       <a href="International_love.pdf">File</a>
       <form action="servicios.html">
@@ -84,9 +143,8 @@
       <p><a href="http://www.barnasha.com/contacto"><img src="LOGO.jpg" width="100" height="100"></a></p>
       <p><a href="#top">Volver arriba</a></p>
 
-
-
       </form>
+</div>
 
   </body>
 </html>
