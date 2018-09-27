@@ -12,9 +12,11 @@
   }
   .menu{
     position: fixed;
-    margin: 50px;
     position: static;
     text-align: center;
+    background-color: #E6C5B6;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   #red{
@@ -31,25 +33,54 @@
     background-color: green;
     border-radius: 50px;
   }
-
+  #img{
+    border-radius:50%;
+    width: 200px;
+    height: 200px;
+  }
   .square{
     height: 100px;
     width: 100px;
     margin: 40px;
     float: left;
   }
+  .first-section{
+    color:black;
+    background-color: #F6ECEC;
+    height: 350px;
+    text-align: center;
+    padding: 20px 300px;
+
+  }
+
+  .menuServicios{
+    position: fixed;
+    position: static;
+    text-align: center;
+    background-color: #CAE9BD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
   </style>
 
   <div class="menu">
-        <p><a href="index.html">HOME</a></p>
-        <p><a href="servicios.html">SERVICIOS</a></p>
-        <p><a href="blog.html">BLOG</a></p>
-        <p><a href="quienesSomos.html">QUIENES SOMOS</a></p>
+        <p><a href="index.html">HOME</a> | <a href="servicios.html">SERVICIOS</a> | <a href="blog.html">BLOG</a> | <a href="quienesSomos.html">QUIENES SOMOS</a>
   </div>
 
 </head>
   <body>
+    <div class="first-section">
+    <h1 id="top">HAS UNA RESERVA</h1>
+        <p>Para iniciar el camino hacia la sanación que buscas primero es necesario reservar tu cita. Actualmente prestamos el servicio en nuestra sede en Cedritos. Si es tu primera vez por favor comunícate con nostros antes de reservar al 3204044081.</p>
+        <p><img src="LOGO.jpg" id="img" width="100" height="100"></p>
+    </div>
+
+    <div class="menuServicios">
+          <p><a href="index.html">FISIOTERAPIA</a> | <a href="servicios.html">COACHING PERSONAS</a> | <a href="blog.html">COACHING EMPRESAS</a> | <a href="quienesSomos.html">PLANES</a>
+    </div>
+
+        <hr>
     <div id="red" class="square">
 
     </div>
