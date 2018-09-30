@@ -5,105 +5,7 @@
       Barnasha
     </title>
 
-    <style type="text/css">
-    a{
-      text-decoration: none;
-    }
-    a:hover{
-      text-decoration: underline;
-      color:green;
-    }
-
-    body{
-      font-family: Helvetica, Arial, sans-serif;
-    }
-
-    #img{
-      border-radius:50%;
-      width: 200px;
-      height: 200px;
-    }
-
-    .menu{
-      position: fixed;
-      position: static;
-      text-align: center;
-      background-color: #E6C5B6;
-      padding-top: 20px;
-      padding-bottom: 20px;
-
-    }
-
-    .first-section{
-      color:white;
-      background-color: #CAE9BD;
-      height: 350px;
-      text-align: center;
-      padding-top: 20px;
-
-    }
-
-    .FilosofíaStart{
-      font-style: solid;
-      text-align: justify;
-      background-color: #FFFFFF;
-      align-items: center;
-      font-size:150%;
-      text-align: center;
-      float: left;
-      margin-left: 20px;
-      margin-right: 20px;
-      width: 300px;
-      height: 350px;
-    }
-
-    .Filosofía{
-      text-align: justify;
-      background-color: #FFFFFF;
-
-    }
-
-    .Sobre{
-      text-align: justify;
-      background-color: #FBE3B5;
-      position: relative;
-      align-items: center;
-      padding: 50px 20px;
-    }
-
-    .TerapiasDestacadas{
-      text-align: center;
-      background-color: #F6ECEC;
-      position: relative;
-      align-items: center;
-      height: 700px;
-      padding-top: 10px;
-    }
-
-    #terapia{
-      height: 300px;
-      width: 500px;
-      margin: 10px;
-      padding-left: 100px;
-      float: left;
-      text-align: center;
-      font-size: 150%;
-    }
-
-    #Contacto{
-      font-style: italic;
-      text-align: justify;
-      background-color: #A2AC87;
-      position: relative;
-      align-items: center;
-      color: #FFFFFF;
-    }
-
-    .clear-float{
-      clear:both;
-    }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="barnasha.css">
 
 <div class="menu">
       <p><a href="index.html">HOME</a> | <a href="servicios.html">SERVICIOS</a> | <a href="blog.html">BLOG</a> | <a href="quienesSomos.html">QUIENES SOMOS</a>
@@ -170,26 +72,32 @@ destrezas empoderantes donde se creen nuevas conexiones neuronales para dar luga
 </div>
     <hr>
 
-<div id=Contacto>
-  <h2>Contáctanos</h2>
+<div Class=Contacto>
+  <div id="contactInfo">
+      <h2>CONTÁCTANOS</h2>
+      <p>Servicio sólo en nuestra sede en Cedritos</p>
+      <p>Tel: 3204044081</p>
+      <p>Bogotá, Colombia</p>
+  </div>
+  <div id="contactForm">
+    <form action="servicios.html">
+    <p>Nombre y apellido:  <input type="text"></p>
+    <p>Asunto: <input type="text" placeholder="¿Qué te interesa conocer?"></p>
+    <p>Teléfono: <input type ="number"></p>
+    <p>Suscribirme para recibir noticias <input type="radio" name="newsletter" checked></p>
+    <p>Ciudad
+      <select>
+      <option selected>Bogotá</option>
+      <option>Medellin</option>
+      <option>Cali</option>
+      <option>Otra</option>
+    </select>
+    <p>email<input type="text"></p>
+    <p><input type ="submit" value="Enviar"></p>
+    <p><a href="#top">Volver arriba</a></p>
+    </form>
+  </div>
 
-      <form action="servicios.html">
-      <p>Nombre y apellido:  <input type="text"></p>
-      <p>Asunto: <input type="text" placeholder="¿Qué te interesa conocer?"></p>
-      <p>Teléfono: <input type ="number"></p>
-      <p>Suscribirme para recibir noticias <input type="radio" name="newsletter" checked></p>
-      <p>Ciudad
-        <select>
-        <option selected>Bogotá</option>
-        <option>Medellin</option>
-        <option>Cali</option>
-        <option>Otra</option>
-      </select>
-      <p>email<input type="text"></p>
-      <p><input type ="submit" value="Enviar"></p>
-      <p><a href="#top">Volver arriba</a></p>
-
-      </form>
 </div>
 
   </body>

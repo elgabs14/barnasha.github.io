@@ -19,31 +19,10 @@
     padding-bottom: 20px;
   }
 
-  #red{
-    background-color: red;
-    border: 10px yellow solid;
+  body{
+    font-family: Helvetica, Arial, sans-serif;
   }
-  #blue{
-    background-color: blue;
-    border-style: dashed groove solid double;
-    border-color: green yellow red purple;
-    border-width: 10px 20px 2px 5px;
-  }
-  #green{
-    background-color: green;
-    border-radius: 50px;
-  }
-  #img{
-    border-radius:50%;
-    width: 200px;
-    height: 200px;
-  }
-  .square{
-    height: 100px;
-    width: 100px;
-    margin: 40px;
-    float: left;
-  }
+
   .first-section{
     color:black;
     background-color: #F6ECEC;
@@ -60,6 +39,43 @@
     background-color: #CAE9BD;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+
+  h2{
+    border-bottom: 5px solid #CAE9BD;
+    width: 100px;
+    margin-left: 620px;
+    text-align: center;
+  }
+
+  h3 a{
+    color: #FFFFFF;
+  }
+
+  h3 a:hover{
+    color: #green;
+    text-decoration: underline;
+  }
+
+  .square{
+    height: 265px;
+    width: 265px;
+    margin: 40px;
+    float: left;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+  }
+
+  #green{
+    background-color: #E6C5B6;
+    border-radius: 50px;
+  }
+
+  #img{
+    border-radius:50%;
+    width: 200px;
+    height: 200px;
   }
 
   </style>
@@ -81,15 +97,29 @@
     </div>
 
         <hr>
-    <div id="red" class="square">
-
-    </div>
-    <div id="blue" class="square">
-
-    </div>
+<div>
+      <h2>Planes</h2>
+</div>
     <div id="green" class="square">
+      <img src="Images/Origen" id="img">
+      <h3><a href="dondeEstas">¿Dónde estás?</a></h3>
+      <p>2h | $65,000 COP</p>
 
     </div>
+  </div>
+      <div id="green" class="square">
+        <img src="Images/Entrenar" id="img">
+        <h3><a href="entrenar">Entrenar</a></h3>
+        <p>2h | $65,000 COP</p>
+
+      </div>
+    </div>
+        <div id="green" class="square">
+          <img src="Images/Ajustar" id="img">
+          <h3><a href="ajustar">Ajustar</a></h3>
+          <p>2h | $65,000 COP</p>
+
+        </div>
   </body>
 
   </html>

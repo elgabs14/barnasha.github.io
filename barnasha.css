@@ -1,0 +1,115 @@
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+  color:green;
+}
+
+body{
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#img{
+  border-radius:50%;
+  width: 200px;
+  height: 200px;
+}
+
+.menu{
+  position: fixed;
+  position: static;
+  text-align: center;
+  background-color: #E6C5B6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.first-section{
+  color:white;
+  background-color: #CAE9BD;
+  height: 350px;
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+.FilosofíaStart{
+  font-style: solid;
+  text-align: justify;
+  background-color: #FFFFFF;
+  align-items: center;
+  font-size:150%;
+  text-align: center;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 300px;
+  height: 450px;
+}
+
+.Filosofía{
+  text-align: justify;
+  background-color: #FFFFFF;
+  margin: 50px;
+}
+
+.Sobre{
+  text-align: justify;
+  background-color: #FBE3B5;
+  position: relative;
+  align-items: center;
+  padding: 50px;
+}
+
+.TerapiasDestacadas{
+  text-align: center;
+  background-color: #F6ECEC;
+  position: relative;
+  align-items: center;
+  height: 700px;
+  padding-top: 10px;
+}
+
+#terapia{
+  height: 300px;
+  width: 500px;
+  margin: 10px;
+  padding-left: 100px;
+  float: left;
+  text-align: center;
+  font-size: 150%;
+}
+
+.Contacto{
+  text-align: justify;
+  height: 350px;
+  width: auto;
+  background-color: #A2AC87;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+#contactInfo{
+  width: 400px;
+  height: 300px;
+  float: left;
+  align-items: center;
+  padding-left: 250px;
+  padding-top: 100px;
+}
+
+#contactForm{
+  float: right;
+  width: 400px;
+  float: right;
+  padding-right: 100px;
+  padding-top: 20px;
+}
+
+.clear-float{
+  clear:both;
+}
+
+</style>
