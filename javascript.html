@@ -1,71 +1,42 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>JavaScript</title>
-
+    <title>Juego JavaScript</title>
     <style type="text/css">
+      p{
+        text-decoration: underline;
+        color: black
+      }
+
+      #shape{
+        height: 200px;
+        width: 200px;
+        border-radius: 0;
+        background-color: green;
+        text-align: center;
+        color: #FFFFFF;
+      }
 
     </style>
 
   </head>
   <body>
+    <h1>Pon tus reacciones a prueba</h1>
+    <h2>Haz clic en los cuadrados y círculos tan rápido como puedas, cuál es tu mejor tiempo?</h2>
+    <p>Tu tiempo</p>
 
-      <input type="text" id="usuario" placeholder="Nombre de usuario">
-      <input type="text" id="contraseña" placeholder="Contraseña">
-      <button type="button" id="button">"Change the text"</button>
-      <p id="confirmacion">This is some text</p>
-      <p>
-        <select id="numero">
-        <option selected>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-      </select>
-      <button type="button" id="guessButton">"Adivinar"</button>
-    </p>
-      <div id="Terapias">
-
-      </div>
+    <div id="shape">
+      <p>Click Me!</p>
+    </div>
 
 
-  <script type="text/javascript">
-      document.getElementById("button").onclick = function () {
-        var usuario = "";
-        usuario = document.getElementById("usuario").value;
-        var contraseña = "";
-        contraseña = document.getElementById("contraseña").value;
-        if (usuario == "Gabriel" && contraseña == "aerosmith") {
-          alert("Éxito");
-        }else {
-          alert("Usuario y/o contraseña incorrectos");
-        }
+    <script type="text/javascript">
+      document.getElementById("shape").onclick = function(){
+        document.getElementById("shape").style.display = "none";
       }
 
-      document.getElementById("guessButton").onclick = function(){
-        var guess = "";
-        guess = document.getElementById("numero").value;
-        var gotIt = false;
-        var numberOfGuesses = 1;
-        while (gotIt == false) {
-        var random = Math.floor(Math.random() * 6);
-        if (guess == random){
-          gotIt = true;
-          alert("Exito tu numero es un " + guess + " Me tomó " + numberOfGuesses + " intentos");
-        }else{
-          numberOfGuesses++;
-        }
-      }
-    }
-    var serviceString = "";
-    var servicios = ["Psiconeuroinmunoterapia", "Drenaje linfático", "Terapia física"];
-    for (var i = 0; i < servicios.length; i++) {
-      serviceString = serviceString + "<p>" + servicios[i] + "</p>";
-    }
-    document.getElementById("Terapias").innerHTML = serviceString;
-
-
-  </script>
+    </script>
   </body>
 </html>
