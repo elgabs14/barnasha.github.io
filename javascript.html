@@ -5,11 +5,6 @@
     <meta charset="utf-8">
     <title>Juego JavaScript</title>
     <style type="text/css">
-      p{
-        text-decoration: underline;
-        color: black
-      }
-
       #shape{
         height: 200px;
         width: 200px;
@@ -17,6 +12,10 @@
         background-color: green;
         text-align: center;
         color: #FFFFFF;
+        display: none;
+        position: relative;
+        top: 100px;
+        left: 200px;
       }
 
     </style>
@@ -25,18 +24,13 @@
   <body>
     <h1>Pon tus reacciones a prueba</h1>
     <h2>Haz clic en los cuadrados y círculos tan rápido como puedas, cuál es tu mejor tiempo?</h2>
-    <p>Tu tiempo</p>
+    <p>Tu tiempo: <span id ="timeTaken"></span> </p>
 
     <div id="shape">
       <p>Click Me!</p>
     </div>
-
-
-    <script type="text/javascript">
-      document.getElementById("shape").onclick = function(){
-        document.getElementById("shape").style.display = "none";
-      }
-
+    <script type="text/javascript" src="jsCode.js">    
     </script>
+
   </body>
 </html>
