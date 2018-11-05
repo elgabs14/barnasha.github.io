@@ -6,33 +6,20 @@
 
     </script>
     <style type="text/css">
-      #circle{
-        background-color: green;
-        border-radius: 50%;
-        height: 100px;
-        margin: 10px;
-        width: 100px;
-      }
-      #square{
-        background-color: red;
-        height: 100px;
-        margin: 10px;
-        width: 100px;
-      }
-      #Texto1{
-        display: none;
-      }
+
     </style>
   </head>
+
   <body>
 
-  <div id="circle">
-
-  </div>
+    <p></p>
 
     <script type="text/javascript">
-    $.get("info.txt", function(data){
-      alert(data);
+    $.ajax("info.txt").done(function(data){
+      $("p").html(data);
+    })
+    .fail(function(){
+    alert("Could not get data");
     });
 
     </script>
