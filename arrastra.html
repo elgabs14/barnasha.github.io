@@ -8,14 +8,46 @@
     <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
     <script type="text/javascript" src="jquery-ui/jquery-ui.js">
     </script>
+    <style media="screen">
+    #draggable {
+      width: 200px;
+      height: 200px;
+      float: left;
+      margin: 0 10px 10px 0;
+      background-color: blue;
+    }
+    #containment-wrapper {
+      width: 500px;
+      float: left;
+      height:5000px;
+      border:2px solid #ccc;
+      background-color: yellow;
+    }
+    h3 {
+      clear: left; }
+    </style>
   </head>
 
   <body>
     <div id="draggable">
-      Drag Me!
+      Drag Me  to the square
+    </div>
+    <div id="containment-wrapper">
+      <p>Suelta aquí</p>
     </div>
     <script type="text/javascript">
-      $( "#draggable" ).draggable();
+    $( function() {
+      $("#draggable").draggable();
+      $("#containment-wrapper").droppable({
+      drop: function( event, ui ) {
+        $(this)
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            alert("Dropped!");
+      }
+    });
+  } );
+
     </script>
   </body>
   </div>
