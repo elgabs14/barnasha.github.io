@@ -5,9 +5,14 @@ a:hover{
   text-decoration: underline;
   color:green;
 }
+a:visited{
+  text-decoration: underline;
+  color:white;
+}
 
 body{
   font-family: Helvetica, Arial, sans-serif;
+  position: relative;
 }
 
 #img{
@@ -20,22 +25,36 @@ body{
   position: fixed;
   position: static;
   text-align: center;
-  background-color: #E6C5B6;
+  background-color: #5D909B !important;
   padding-top: 20px;
   padding-bottom: 20px;
+  color: #000000 !important;
 
 }
-
-.first-section{
-  color:white;
-  background-color: #CAE9BD;
-  height: 350px;
+#navbar{
   text-align: center;
+  background-color: #5D909B !important;
   padding-top: 20px;
+  padding-bottom: 20px;
+  color: #000000 !important;
+  position: sticky;
+
 
 }
 
-.FilosofíaStart{
+.jumbotron{
+  text-align: center;
+  color:white;
+  background-color: #6aa84f !important;
+  text-align: center;
+  align-items: center;
+}
+
+#registroHome{
+  align-items: center;
+}
+
+.sectionStyle2{
   font-style: solid;
   text-align: justify;
   background-color: #FFFFFF;
@@ -45,39 +64,40 @@ body{
   float: left;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 80px;
   width: 300px;
-  height: 450px;
+  height: 420px;
 }
 
-.Filosofía{
+.sectionStyle3{
   text-align: justify;
   background-color: #FFFFFF;
   margin: 50px;
+  padding-top: 30px;
+  margin-top: 80px;
 }
 
-.Sobre{
+.sectionStyle4{
   text-align: justify;
-  background-color: #FBE3B5;
+  background-color: #CAE9BD;
   position: relative;
   align-items: center;
   padding: 50px;
 }
 
-.TerapiasDestacadas{
+.sectionStyle5{
   text-align: center;
-  background-color: #F6ECEC;
+  background-color: #FFFFFF;
   position: relative;
   align-items: center;
-  height: 700px;
+  height: 850px;
   padding-top: 10px;
 }
 
 #terapia{
-  height: 300px;
+  height: 425px;
   width: 500px;
   margin: 10px;
-  padding-left: 100px;
-  float: left;
   text-align: center;
   font-size: 150%;
 }
@@ -111,5 +131,3 @@ body{
 .clear-float{
   clear:both;
 }
-
-</style>
